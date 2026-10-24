@@ -1,0 +1,166 @@
+#EXTM3U
+# Apple TV / APTV 订阅 v5    2026-10-25 上海电信家宽逐条实测（APTV → 配置 → 订阅 → 新增播放列表，直接粘贴本文件URL）
+# 收录门禁：清单可达 + 分段实测吞吐>=实时1.5倍 + 直播时效(清单时间戳偏差<5分钟) + 抽帧人工核对画面台标
+# 频道名以截帧画面的台标人工核实，不采用第三方清单自带名称（同一编号在不同运营商网关指向不同频道）
+# 名称后中括号=ffprobe实测分辨率与实测分段码率；每频道最多1条备用（同省不同电信节点）
+# 央视/卫视主体为上海电信IPTV网关(101.66.x，仅本机等家宽/电信线路可达)；CGTN、内蒙古、延边、安多、苏州4K为官方公网源
+# 画质构成：1个4K(苏州4K 3840x2160)+31个1080P+2个720P+9个标清；本清单实测无央视4K/8K可用源
+# 未收录(无可验证实时线路)：CCTV-16奥林匹克、CCTV-17、CCTV5+、河北、东南、天津、福建、厦门、深圳、新疆、西藏、青海、甘肃、海南、兵团、康巴
+#EXTINF:-1 tvg-name="CCTV-1 综合" group-title="央视",CCTV-1 综合 [1080P 8832kbps]
+http://101.66.194.29:9901/tsfile/live/0001_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-1 综合 备用" group-title="央视 备用",CCTV-1 综合 备用 [1080P 8832kbps]
+http://101.66.194.176:9901/tsfile/live/0001_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-2 财经" group-title="央视",CCTV-2 财经 [1080P 7955kbps]
+http://101.66.198.84:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-2 财经 备用" group-title="央视 备用",CCTV-2 财经 备用 [1080P 7886kbps]
+http://101.66.194.176:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-3 综艺" group-title="央视",CCTV-3 综艺 [1080P 6877kbps]
+http://101.66.198.84:9901/tsfile/live/0003_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-3 综艺 备用" group-title="央视 备用",CCTV-3 综艺 备用 [1080P 8358kbps]
+http://101.66.194.29:9901/tsfile/live/0003_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-4 中文国际" group-title="央视",CCTV-4 中文国际 [标清 2463kbps]
+http://36.136.38.87:9901/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV-5 体育" group-title="央视",CCTV-5 体育 [1080P 9111kbps]
+http://101.66.194.176:9901/tsfile/live/0005_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-5 体育 备用" group-title="央视 备用",CCTV-5 体育 备用 [1080P 8090kbps]
+http://101.66.195.232:9901/tsfile/live/0005_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-6 电影" group-title="央视",CCTV-6 电影 [1080P 7236kbps]
+http://101.66.198.84:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-6 电影 备用" group-title="央视 备用",CCTV-6 电影 备用 [1080P 8277kbps]
+http://101.66.194.29:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-7 国防军事" group-title="央视",CCTV-7 国防军事 [1080P 8093kbps]
+http://101.66.195.232:9901/tsfile/live/0007_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-7 国防军事 备用" group-title="央视 备用",CCTV-7 国防军事 备用 [1080P 8035kbps]
+http://101.66.194.176:9901/tsfile/live/0007_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-8 电视剧" group-title="央视",CCTV-8 电视剧 [1080P 7684kbps]
+http://101.66.195.232:9901/tsfile/live/0008_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-8 电视剧 备用" group-title="央视 备用",CCTV-8 电视剧 备用 [1080P 9563kbps]
+http://101.66.194.29:9901/tsfile/live/0008_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-9 纪录" group-title="央视",CCTV-9 纪录 [1080P 7983kbps]
+http://101.66.198.84:9901/tsfile/live/0009_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-9 纪录 备用" group-title="央视 备用",CCTV-9 纪录 备用 [1080P 7957kbps]
+http://101.66.195.232:9901/tsfile/live/0009_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-10 科教" group-title="央视",CCTV-10 科教 [1080P 7668kbps]
+http://101.66.198.84:9901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-10 科教 备用" group-title="央视 备用",CCTV-10 科教 备用 [1080P 7668kbps]
+http://101.66.195.232:9901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-11 戏曲" group-title="央视",CCTV-11 戏曲 [标清 2340kbps]
+http://101.66.198.84:9901/tsfile/live/0011_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-11 戏曲 备用" group-title="央视 备用",CCTV-11 戏曲 备用 [标清 2340kbps]
+http://101.66.195.232:9901/tsfile/live/0011_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-12 社会与法" group-title="央视",CCTV-12 社会与法 [1080P 7909kbps]
+http://101.66.198.84:9901/tsfile/live/0012_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-12 社会与法 备用" group-title="央视 备用",CCTV-12 社会与法 备用 [1080P 8118kbps]
+http://101.66.194.29:9901/tsfile/live/0012_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-13 新闻" group-title="央视",CCTV-13 新闻 [1080P 8826kbps]
+http://101.66.198.84:9901/tsfile/live/0013_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-13 新闻 备用" group-title="央视 备用",CCTV-13 新闻 备用 [1080P 8826kbps]
+http://101.66.195.232:9901/tsfile/live/0013_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-14 少儿" group-title="央视",CCTV-14 少儿 [1080P 7907kbps]
+http://101.66.198.84:9901/tsfile/live/0014_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-14 少儿 备用" group-title="央视 备用",CCTV-14 少儿 备用 [1080P 7722kbps]
+http://101.66.194.29:9901/tsfile/live/0014_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-15 音乐" group-title="央视",CCTV-15 音乐 [标清 2307kbps]
+http://101.66.198.84:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CCTV-15 音乐 备用" group-title="央视 备用",CCTV-15 音乐 备用 [标清 2307kbps]
+http://101.66.195.232:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="CGTN" group-title="央视",CGTN [720P 2174kbps]
+http://english-livetx.cgtn.com/hls/yypdyyctzb_hd.m3u8
+#EXTINF:-1 tvg-name="CGTN纪录" group-title="央视",CGTN纪录 [720P 2108kbps]
+https://english-livetx.cgtn.com/hls/yypdjlctzb_hd.m3u8
+#EXTINF:-1 tvg-name="北京卫视" group-title="卫视地方台",北京卫视 [1080P 7198kbps]
+http://101.66.198.84:9901/tsfile/live/0016_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="北京卫视 备用" group-title="卫视地方台 备用",北京卫视 备用 [1080P 8362kbps]
+http://101.66.195.232:9901/tsfile/live/0016_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="江苏卫视" group-title="卫视地方台",江苏卫视 [1080P 10010kbps]
+http://101.66.198.84:9901/tsfile/live/0017_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="江苏卫视 备用" group-title="卫视地方台 备用",江苏卫视 备用 [1080P 8444kbps]
+http://101.66.195.232:9901/tsfile/live/0017_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="东方卫视" group-title="卫视地方台",东方卫视 [1080P 8356kbps]
+http://101.66.198.84:9901/tsfile/live/0018_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="东方卫视 备用" group-title="卫视地方台 备用",东方卫视 备用 [1080P 7422kbps]
+http://101.66.195.232:9901/tsfile/live/0018_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="湖南卫视" group-title="卫视地方台",湖南卫视 [1080P 7400kbps]
+http://101.66.198.84:9901/tsfile/live/0019_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="湖南卫视 备用" group-title="卫视地方台 备用",湖南卫视 备用 [1080P 7400kbps]
+http://101.66.195.232:9901/tsfile/live/0019_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="浙江卫视" group-title="卫视地方台",浙江卫视 [1080P 7969kbps]
+http://101.66.198.84:9901/tsfile/live/0124_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="浙江卫视 备用" group-title="卫视地方台 备用",浙江卫视 备用 [1080P 9562kbps]
+http://101.66.194.29:9901/tsfile/live/0124_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="广东卫视" group-title="卫视地方台",广东卫视 [1080P 7409kbps]
+http://101.66.195.232:9901/tsfile/live/0125_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="广东卫视 备用" group-title="卫视地方台 备用",广东卫视 备用 [1080P 7343kbps]
+http://101.66.194.176:9901/tsfile/live/0125_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="湖北卫视" group-title="卫视地方台",湖北卫视 [1080P 7390kbps]
+http://101.66.195.232:9901/tsfile/live/0117_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="湖北卫视 备用" group-title="卫视地方台 备用",湖北卫视 备用 [1080P 9212kbps]
+http://101.66.194.29:9901/tsfile/live/0117_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="山东卫视" group-title="卫视地方台",山东卫视 [1080P 7537kbps]
+http://101.66.195.232:9901/tsfile/live/0131_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="山东卫视 备用" group-title="卫视地方台 备用",山东卫视 备用 [1080P 7611kbps]
+http://101.66.194.29:9901/tsfile/live/0131_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="安徽卫视" group-title="卫视地方台",安徽卫视 [1080P 7904kbps]
+http://101.66.195.232:9901/tsfile/live/0130_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="安徽卫视 备用" group-title="卫视地方台 备用",安徽卫视 备用 [1080P 7904kbps]
+http://101.66.194.29:9901/tsfile/live/0130_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="河南卫视" group-title="卫视地方台",河南卫视 [1080P 8872kbps]
+http://101.66.198.84:9901/tsfile/live/0139_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="河南卫视 备用" group-title="卫视地方台 备用",河南卫视 备用 [1080P 7968kbps]
+http://101.66.195.232:9901/tsfile/live/0139_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="四川卫视" group-title="卫视地方台",四川卫视 [1080P 8043kbps]
+http://101.66.198.84:9901/tsfile/live/0123_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="四川卫视 备用" group-title="卫视地方台 备用",四川卫视 备用 [1080P 8092kbps]
+http://101.66.194.176:9901/tsfile/live/0123_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="贵州卫视" group-title="卫视地方台",贵州卫视 [1080P 7415kbps]
+http://101.66.198.84:9901/tsfile/live/0120_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="贵州卫视 备用" group-title="卫视地方台 备用",贵州卫视 备用 [1080P 8790kbps]
+http://101.66.194.29:9901/tsfile/live/0120_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="辽宁卫视" group-title="卫视地方台",辽宁卫视 [1080P 7982kbps]
+http://101.66.198.84:9901/tsfile/live/0121_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="辽宁卫视 备用" group-title="卫视地方台 备用",辽宁卫视 备用 [1080P 8999kbps]
+http://101.66.194.29:9901/tsfile/live/0121_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="重庆卫视" group-title="卫视地方台",重庆卫视 [1080P 7834kbps]
+http://101.66.195.232:9901/tsfile/live/0142_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="重庆卫视 备用" group-title="卫视地方台 备用",重庆卫视 备用 [1080P 7834kbps]
+http://101.66.194.29:9901/tsfile/live/0142_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="黑龙江卫视" group-title="卫视地方台",黑龙江卫视 [1080P 7405kbps]
+http://101.66.198.84:9901/tsfile/live/0143_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="黑龙江卫视 备用" group-title="卫视地方台 备用",黑龙江卫视 备用 [1080P 7405kbps]
+http://101.66.195.232:9901/tsfile/live/0143_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="江西卫视" group-title="卫视地方台",江西卫视 [1080P 8251kbps]
+http://101.66.198.84:9901/tsfile/live/0138_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="江西卫视 备用" group-title="卫视地方台 备用",江西卫视 备用 [1080P 7412kbps]
+http://101.66.194.29:9901/tsfile/live/0138_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="山西卫视" group-title="卫视地方台",山西卫视 [标清 2281kbps]
+http://101.66.198.84:9901/tsfile/live/0118_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="山西卫视 备用" group-title="卫视地方台 备用",山西卫视 备用 [标清 2281kbps]
+http://101.66.195.232:9901/tsfile/live/0118_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="云南卫视" group-title="卫视地方台",云南卫视 [标清 2639kbps]
+http://101.66.198.84:9901/tsfile/live/0119_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="云南卫视 备用" group-title="卫视地方台 备用",云南卫视 备用 [标清 2639kbps]
+http://101.66.195.232:9901/tsfile/live/0119_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="吉林卫视" group-title="卫视地方台",吉林卫视 [标清 2382kbps]
+http://101.66.198.84:9901/tsfile/live/0116_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="吉林卫视 备用" group-title="卫视地方台 备用",吉林卫视 备用 [标清 2382kbps]
+http://101.66.195.232:9901/tsfile/live/0116_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="陕西卫视" group-title="卫视地方台",陕西卫视 [标清 2726kbps]
+http://101.66.198.84:9901/tsfile/live/0136_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="陕西卫视 备用" group-title="卫视地方台 备用",陕西卫视 备用 [标清 2253kbps]
+http://101.66.195.232:9901/tsfile/live/0136_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="广西卫视" group-title="卫视地方台",广西卫视 [标清 2748kbps]
+http://101.66.198.84:9901/tsfile/live/0113_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="广西卫视 备用" group-title="卫视地方台 备用",广西卫视 备用 [标清 2748kbps]
+http://101.66.195.232:9901/tsfile/live/0113_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="金鹰卡通" group-title="卫视地方台",金鹰卡通 [标清 2350kbps]
+http://101.66.198.84:9901/tsfile/live/1000_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="金鹰卡通 备用" group-title="卫视地方台 备用",金鹰卡通 备用 [标清 2350kbps]
+http://101.66.195.232:9901/tsfile/live/1000_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="内蒙古卫视" group-title="卫视地方台",内蒙古卫视 [1080P 4832kbps]
+http://play1-qk.nmtv.cn/live/1769652018126032.m3u8
+#EXTINF:-1 tvg-name="延边卫视" group-title="卫视地方台",延边卫视 [1080P 1869kbps]
+https://srs.iyb983.cn:443/video/CYS/index.m3u8
+#EXTINF:-1 tvg-name="安多卫视" group-title="卫视地方台",安多卫视 [1080P 1839kbps]
+https://liveout.xntv.tv/a65jur/96iln2.m3u8
+#EXTINF:-1 tvg-name="苏州4K" group-title="4K",苏州4K [4K 2058kbps]
+http://tylive.kan0512.com/norecord/csztv4k_4k.m3u8
